@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'AMError-Mac' target in the 'AMError-Mac' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Kiwi/Kiwi.h>
+#endif
