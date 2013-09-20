@@ -12,6 +12,8 @@
 		B328D17B17E23C7F00D0DBCB /* AMError.m in Sources */ = {isa = PBXBuildFile; fileRef = B36389FF17E2376800F2BBE4 /* AMError.m */; };
 		B328D17F17E23EE200D0DBCB /* AMErrorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */; };
 		B328D18017E23EE200D0DBCB /* AMErrorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */; };
+		B33575E117EC3F62006C8DA7 /* AMError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B36389FD17E2376800F2BBE4 /* AMError.h */; };
+		B33575E317EC3F88006C8DA7 /* AMError.h in Headers */ = {isa = PBXBuildFile; fileRef = B36389FD17E2376800F2BBE4 /* AMError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B36389B617E2373A00F2BBE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389B517E2373A00F2BBE4 /* SenTestingKit.framework */; };
 		B36389BA17E2373A00F2BBE4 /* libAMError-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389A017E2373A00F2BBE4 /* libAMError-Mac.a */; };
 		B36389D017E2375400F2BBE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389CF17E2375400F2BBE4 /* Foundation.framework */; };
@@ -49,6 +51,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				B33575E117EC3F62006C8DA7 /* AMError.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +223,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33575E317EC3F88006C8DA7 /* AMError.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,9 @@
 
 #import <Foundation/Foundation.h>
 
-
+///---------------------
+/// @name Main Functions
+//----------------------
 
 #define AMErrorMake(domain, code) _AMErrorMake(code, #code, domain, __FILE__, __LINE__)
 
@@ -10,11 +12,18 @@
 #define AMOutputErrorAssign(outError, error) _AMOutputErrorAssign(outError, error)
 
 
+///-------------------------------
+/// @name Additional UserInfo Keys
+//--------------------------------
+
 extern NSString *const AMErrorOriginKey;  // NSString
 extern NSString *const AMErrorNameKey;  // NSString
 
 
+/**
+ `AMError`
 
+ */
 @interface AMError : NSError <NSMutableCopying>
 
 /**
@@ -63,6 +72,10 @@ extern NSString *const AMErrorNameKey;  // NSString
 
 
 
+/**
+ `AMMutableError`
+
+ */
 @interface AMMutableError : AMError 
 
 /**
@@ -134,7 +147,7 @@ extern NSString *const AMErrorNameKey;  // NSString
 
 
 
-// !!!: Internal methods, use macros instead.
+// !!!: Internal functions, use macros instead.
 
 #ifdef __cplusplus
 extern "C" {
