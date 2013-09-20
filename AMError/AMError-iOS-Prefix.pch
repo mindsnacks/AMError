@@ -1,7 +1,3 @@
-//
-// Prefix header for all source files of the 'AMError-iOS' target in the 'AMError-iOS' project
-//
-
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
 #endif
