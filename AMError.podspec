@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Andy Mroczkowski" => "andy@mrox.net" }
   s.ios.deployment_target = '6.1'
   #s.osx.deployment_target = '10.8' # TODO: fix osx
-  s.source       = { :git => "https://github.com/amrox/AMError.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/amrox/AMError.git", :tag => "0.1.0" }
   s.source_files  = 'AMError/AMError.{h,m}'
   s.framework  = 'Foundation'
   s.requires_arc = true
