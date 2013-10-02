@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/amrox/AMError"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Andy Mroczkowski" => "andy@mrox.net" }
-  s.ios.deployment_target = '6.1'
+  s.ios.deployment_target = '6.0'
   #s.osx.deployment_target = '10.8' # TODO: fix osx
   s.source       = { :git => "https://github.com/amrox/AMError.git", :tag => "0.1.0" }
   s.source_files  = 'AMError/AMError.{h,m}'
