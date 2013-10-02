@@ -7,7 +7,7 @@
 
 #define AMErrorMake(domain, code) _AMErrorMake(code, #code, domain, __FILE__, __LINE__, nil)
 
-#define AMErrorMakeWithInfo(domain, code, info) _AMErrorMake(code, #code, domain, __FILE__, __LINE__, nil)
+#define AMErrorMakeWithInfo(domain, code, info) _AMErrorMake(code, #code, domain, __FILE__, __LINE__, info)
 
 #define AMErrorWrap(error) _AMErrorWrap(error, __FILE__, __LINE__)
 
