@@ -5,7 +5,9 @@
 /// @name Main Functions
 //----------------------
 
-#define AMErrorMake(domain, code) _AMErrorMake(code, #code, domain, __FILE__, __LINE__)
+#define AMErrorMake(domain, code) _AMErrorMake(code, #code, domain, __FILE__, __LINE__, nil)
+
+#define AMErrorMakeWithInfo(domain, code, info) _AMErrorMake(code, #code, domain, __FILE__, __LINE__, nil)
 
 #define AMErrorWrap(error) _AMErrorWrap(error, __FILE__, __LINE__)
 
@@ -161,7 +163,7 @@ extern NSString *const AMErrorNameKey;  // NSString
 extern "C" {
 #endif
 
-    extern AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSString *domain, char const *fileName, int lineNumber);
+    extern AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSString *domain, char const *fileName, int lineNumber, NSDictionary *userInfo);
 
     extern AMMutableError* _AMErrorWrap(NSError *origError, char const *fileName, int lineNumber);
 
