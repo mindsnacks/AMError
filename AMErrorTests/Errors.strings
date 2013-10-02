@@ -1,0 +1,10 @@
+/* 
+  Errors.strings
+  AMError
+
+  Created by Andy Mroczkowski on 10/1/13.
+
+*/
+
+
+"ERROR_CODE_1" = "Something Else Terrible Happened";

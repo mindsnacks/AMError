@@ -68,6 +68,14 @@ extern NSString *const AMErrorNameKey;  // NSString
 
 + (void)setBundle:(NSBundle *)bundle forDomain:(NSString *)domain;
 
++ (NSString *)stringsTableNameForDomain:(NSString *)domain;
+
+/**
+ By default, AMError will look for <domain>.strings. If you wish to use a
+ different strings file you can specify it here
+ */
++ (void)setStringsTableName:(NSString *)tableName forDomain:(NSString *)domain;
+
 @end
 
 

@@ -24,6 +24,8 @@
 		B3928B7917E2BE2000BF13A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3928B7717E2BE1B00BF13A1 /* Foundation.framework */; };
 		B3928B8517E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */; };
 		B3928B8617E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */; };
+		B3EAE3C417FB9C280052DF1E /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
+		B3EAE3C517FB9C280052DF1E /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
 		DD5CD1177F694573B85B6E34 /* libPods-AMError-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,7 @@
 		B3928B7717E2BE1B00BF13A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = net.mrox.amerror.strings; sourceTree = "<group>"; };
 		B3CE51B2BE314E62BB54F4D9 /* Pods-AMError-iOSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.xcconfig"; path = "Pods/Pods-AMError-iOSTests.xcconfig"; sourceTree = "<group>"; };
+		B3EAE3C317FB9C280052DF1E /* Errors.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Errors.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,7 @@
 			children = (
 				B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */,
 				B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */,
+				B3EAE3C317FB9C280052DF1E /* Errors.strings */,
 				B328D16A17E23AA800D0DBCB /* Supporting Files */,
 			);
 			path = AMErrorTests;
@@ -340,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3928B8617E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */,
+				B3EAE3C517FB9C280052DF1E /* Errors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3928B8517E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */,
+				B3EAE3C417FB9C280052DF1E /* Errors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

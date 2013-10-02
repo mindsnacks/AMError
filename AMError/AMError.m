@@ -4,20 +4,11 @@ NSString *const AMErrorOriginKey = @"AMErrorOrigin";
 NSString *const AMErrorNameKey = @"AMErrorName";
 
 
-//@interface AMError ()
-//@property (nonatomic) NSString *name;
-//@property (nonatomic) NSString *origin;
-//@property (nonatomic) NSString *localizedFailureReason;
-//@property (nonatomic) NSError *underlyingError;
-//
-//@property (nonatomic, strong) NSMutableDictionary *mutableUserInfo;
-//@end
-
-
 @implementation AMError
 
 __strong static NSBundle *defaultBundle = nil;
 __strong static NSMutableDictionary *bundleMap = nil;
+__strong static NSMutableDictionary *stringsTableMap = nil;
 
 + (void)initialize
 {
@@ -81,16 +72,44 @@ __strong static NSMutableDictionary *bundleMap = nil;
     dispatch_once(&onceToken, ^{
         bundleMap = [[NSMutableDictionary alloc] init];
     });
-    bundleMap[domain] = bundle;
+
+    @synchronized(bundleMap) {
+        bundleMap[domain] = bundle;
+    }
 }
 
 + (NSBundle *)bundleForDomain:(NSString *)domain
 {
-    if (bundleMap[domain] != nil) {
-        return bundleMap[domain];
+    @synchronized(bundleMap) {
+        if (bundleMap[domain] != nil) {
+            return bundleMap[domain];
+        }
     }
     return defaultBundle;
 }
+
++ (void)setStringsTableName:(NSString *)tableName forDomain:(NSString *)domain
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        stringsTableMap = [[NSMutableDictionary alloc] init];
+    });
+
+    @synchronized(stringsTableMap) {
+        stringsTableMap[domain] = tableName;
+    }
+}
+
++ (NSString *)stringsTableNameForDomain:(NSString *)domain
+{
+    @synchronized(stringsTableMap) {
+        if (stringsTableMap[domain] != nil) {
+            return stringsTableMap[domain];
+        }
+    }
+    return domain;
+}
+
 
 @end
 
@@ -216,7 +235,7 @@ AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSStrin
 
 	NSString *localizedDescription = [[AMError bundleForDomain:domain] localizedStringForKey:errorNameString
                                                                                        value:nil
-                                                                                       table:domain];
+                                                                                       table:[AMError stringsTableNameForDomain:domain]];
 
     AMMutableError *error = [AMMutableError errorWithDomain:domain code:errorCode userInfo:nil];
     error.name = errorNameString;

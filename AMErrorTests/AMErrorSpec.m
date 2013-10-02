@@ -13,6 +13,8 @@
 #define ERROR_CODE_1 1
 #define ERROR_CODE_2 2
 
+#define ERROR_CODE_1_DESCRIPTION_A @"Something Terrible Happened"
+#define ERROR_CODE_1_DESCRIPTION_B @"Something Else Terrible Happened"
 
 SPEC_BEGIN(AMErrorSpec)
 
@@ -38,6 +40,10 @@ context(@"macro creation", ^{
 
     specify(^{
         [[theValue(error.code) should] equal:theValue(ERROR_CODE_1)];
+    });
+
+    specify(^{
+        [[error.localizedDescription should] equal:ERROR_CODE_1_DESCRIPTION_A];
     });
 });
 
@@ -136,6 +142,21 @@ context(@"customized marcro", ^{
     specify(^{
         [[theValue([error code]) should] equal:theValue(ERROR_CODE_1)];
     });
+});
+
+context(@"custom strings table", ^{
+
+    __block AMError *error;
+
+    beforeEach(^{
+        [AMError setStringsTableName:@"Errors" forDomain:ERROR_DOMAIN];
+        error = AMErrorMake(ERROR_DOMAIN, ERROR_CODE_1);
+    });
+
+    specify(^{
+        [[error.localizedDescription should] equal:ERROR_CODE_1_DESCRIPTION_B];
+    });
+
 });
 
 SPEC_END
