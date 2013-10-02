@@ -227,7 +227,7 @@ static NSString *originString(char const *fileName, int lineNumber)
 }
 
 
-AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSString *domain, char const *fileName, int lineNumber)
+AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSString *domain, char const *fileName, int lineNumber, NSDictionary *userInfo)
 {
 	NSString *errorNameString = [NSString stringWithCString:errorName encoding:NSUTF8StringEncoding];
 
@@ -237,7 +237,7 @@ AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSStrin
                                                                                        value:nil
                                                                                        table:[AMError stringsTableNameForDomain:domain]];
 
-    AMMutableError *error = [AMMutableError errorWithDomain:domain code:errorCode userInfo:nil];
+    AMMutableError *error = [AMMutableError errorWithDomain:domain code:errorCode userInfo:userInfo];
     error.name = errorNameString;
     error.origin = errorOrigin;
     error.localizedDescription = localizedDescription;

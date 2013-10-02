@@ -47,6 +47,22 @@ context(@"macro creation", ^{
     });
 });
 
+context(@"macro creation with info", ^{
+
+    __block AMError *error;
+    __block NSMutableDictionary *userInfo;
+
+    beforeEach(^{
+        userInfo = [[NSMutableDictionary alloc] init];
+        userInfo[@"breakfast"] = @"pancakes";
+        error = AMErrorMakeWithInfo(ERROR_DOMAIN, ERROR_CODE_1, userInfo);
+    });
+
+    specify(^{
+        [[error[@"breakfast"] should] equal:@"pancakes"];
+    });
+});
+
 context(@"macro creation with existing error", ^{
 
     __block AMError *error;
