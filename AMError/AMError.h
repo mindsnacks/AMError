@@ -91,62 +91,62 @@ extern NSString *const AMErrorNameKey;  // NSString
 /**
  Corresponds to `AMErrorNameKey`.
  */
-@property (nonatomic) NSString *name;
+@property (nonatomic, strong) NSString *name;
 
 /**
  Corresponds to `AMErrorOriginKey`.
  */
-@property (nonatomic) NSString *origin;
+@property (nonatomic, strong) NSString *origin;
 
 /**
  Corresponds to `NSLocalizedDescriptionKey`.
  */
-@property (nonatomic) NSString *localizedDescription;
+@property (nonatomic, strong) NSString *localizedDescription;
 
 /**
  Corresponds to `NSLocalizedFailureReasonErrorKey`.
  */
-@property (nonatomic) NSString *localizedFailureReason;
+@property (nonatomic, strong) NSString *localizedFailureReason;
 
 /**
  Corresponds to `NSLocalizedRecoverySuggestionErrorKey`.
  */
-@property (nonatomic) NSString *localizedRecoverySuggestion;
+@property (nonatomic, strong) NSString *localizedRecoverySuggestion;
 
 /**
  Corresponds to `NSLocalizedRecoveryOptionsErrorKey`
  */
-@property (nonatomic) NSArray *localizedRecoveryOptions;
+@property (nonatomic, strong) NSArray *localizedRecoveryOptions;
 
 /**
  Corresponds to `NSRecoveryAttempterErrorKey`
  */
-@property (nonatomic) id recoveryAttempter;
+@property (nonatomic, strong) id recoveryAttempter;
 
 /**
  Corresponds to `NSHelpAnchorErrorKey`
  */
-@property (nonatomic) NSString *helpAnchor;
+@property (nonatomic, strong) NSString *helpAnchor;
 
 /**
  Corresponds to `NSUnderlyingErrorKey`.
  */
-@property (nonatomic) NSError *underlyingError;
+@property (nonatomic, strong) NSError *underlyingError;
 
 /**
  Corresponds to `NSStringEncodingErrorKey`.
 */
-@property (nonatomic) NSNumber *stringEncoding;
+@property (nonatomic, strong) NSNumber *stringEncoding;
 
 /**
  Corresponds to `NSURLErrorKey`.
 */
-@property (nonatomic) NSURL *URL;
+@property (nonatomic, strong) NSURL *URL;
 
 /**
  Corresponds to `NSFilePathErrorKey`.
  */
-@property (nonatomic) NSString *filePath;
+@property (nonatomic, strong) NSString *filePath;
 
 /**
  Dictionary-like access to `userInfo`.
