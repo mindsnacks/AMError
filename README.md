@@ -3,6 +3,9 @@ AMError
 
 ## Changelog
 
+- **0.2.3**
+ - Setting `localizedDescription` to nil if not found in strings table
+
 - **0.2.2**
  - Adding `strong` qualifier on properties
 
