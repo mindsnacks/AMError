@@ -26,24 +26,39 @@ context(@"macro creation", ^{
 
     __block AMError *error;
 
-    beforeEach(^{
-        error = AMErrorMake(ERROR_DOMAIN, ERROR_CODE_1);
+    context(@"error 1", ^{
+
+        beforeEach(^{
+            error = AMErrorMake(ERROR_DOMAIN, ERROR_CODE_1);
+        });
+
+        specify(^{
+            [[error.name should] equal:@"ERROR_CODE_1"];
+        });
+
+        specify(^{
+            [[error.origin should] beNonNil];
+        });
+
+        specify(^{
+            [[theValue(error.code) should] equal:theValue(ERROR_CODE_1)];
+        });
+
+        specify(^{
+            [[error.localizedDescription should] equal:ERROR_CODE_1_DESCRIPTION_A];
+        });
     });
 
-    specify(^{
-        [[error.name should] equal:@"ERROR_CODE_1"];
-    });
+    context(@"error 2", ^{
 
-    specify(^{
-        [[error.origin should] beNonNil];
-    });
+        beforeEach(^{
+            error = AMErrorMake(ERROR_DOMAIN, ERROR_CODE_2);
+        });
 
-    specify(^{
-        [[theValue(error.code) should] equal:theValue(ERROR_CODE_1)];
-    });
+        specify(^{
+            [[error.localizedDescription should] beNil];
+        });
 
-    specify(^{
-        [[error.localizedDescription should] equal:ERROR_CODE_1_DESCRIPTION_A];
     });
 });
 

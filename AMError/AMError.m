@@ -236,6 +236,12 @@ AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSStrin
 	NSString *localizedDescription = [[AMError bundleForDomain:domain] localizedStringForKey:errorNameString
                                                                                        value:nil
                                                                                        table:[AMError stringsTableNameForDomain:domain]];
+    if ([localizedDescription isEqualToString:errorNameString]) {
+        // localizedStringForKey will return the original string if no localized
+        // string is found, which will just be the error name. In this case just
+        // set the description to nil.
+        localizedDescription = nil;
+    }
 
     AMMutableError *error = [AMMutableError errorWithDomain:domain code:errorCode userInfo:userInfo];
     error.name = errorNameString;
@@ -252,7 +258,7 @@ AMMutableError *_AMErrorWrap(NSError *origError, char const *fileName, int lineN
     AMMutableError *error = [AMMutableError errorWithDomain:[origError domain] code:[origError code] userInfo:[origError userInfo]];
 
     error.origin = errorOrigin;
-
+    
     return error;
 }
 
