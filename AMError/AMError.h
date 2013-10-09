@@ -100,6 +100,10 @@ extern NSString *const AMErrorNameKey;  // NSString
 
 /**
  Corresponds to `NSLocalizedDescriptionKey`.
+ 
+ NOTE: NSError provides a default value for `localizedDescription` that 
+ this subclass does NOT override. If this property is set to nil, it will
+ fall back to the superclasses implementation, and NOT return nil.
  */
 @property (nonatomic, strong) NSString *localizedDescription;
 
@@ -157,7 +161,7 @@ extern NSString *const AMErrorNameKey;  // NSString
 
 
 
-// !!!: Internal functions, use macros instead.
+// WARNING: Internal functions, use macros instead.
 
 #ifdef __cplusplus
 extern "C" {

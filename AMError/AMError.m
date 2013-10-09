@@ -213,7 +213,10 @@ __strong static NSMutableDictionary *stringsTableMap = nil;
 
 - (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key
 {
-    _mutableUserInfo[key] = obj;
+    if (obj != nil)
+        _mutableUserInfo[key] = obj;
+    else
+        [_mutableUserInfo removeObjectForKey:key];
 }
 
 @end
@@ -239,7 +242,8 @@ AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSStrin
     if ([localizedDescription isEqualToString:errorNameString]) {
         // localizedStringForKey will return the original string if no localized
         // string is found, which will just be the error name. In this case just
-        // set the description to nil.
+        // set the description to nil, which will cause it to fall back on the
+        // superclasses localizedDescription implementation
         localizedDescription = nil;
     }
 
