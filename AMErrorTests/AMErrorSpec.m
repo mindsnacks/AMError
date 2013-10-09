@@ -55,8 +55,9 @@ context(@"macro creation", ^{
             error = AMErrorMake(ERROR_DOMAIN, ERROR_CODE_2);
         });
 
-        specify(^{
-            [[error.localizedDescription should] beNil];
+        it(@"should have the default localizedDescription", ^{
+            NSString *expectedLocalizedDescription = @"The operation couldn’t be completed. (net.mrox.amerror error 2.)";
+            [[error.localizedDescription should] equal:expectedLocalizedDescription];
         });
 
     });
