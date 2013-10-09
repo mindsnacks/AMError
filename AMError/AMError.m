@@ -213,7 +213,10 @@ __strong static NSMutableDictionary *stringsTableMap = nil;
 
 - (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key
 {
-    _mutableUserInfo[key] = obj;
+    if (obj != nil)
+        _mutableUserInfo[key] = obj;
+    else
+        [_mutableUserInfo removeObjectForKey:key];
 }
 
 @end
