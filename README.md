@@ -3,6 +3,10 @@ AMError
 
 ## Changelog
 
+- **0.2.4**
+ - Accounting for NSError's default `localizedDescription` value
+ - Allowing properties to be set to nil
+
 - **0.2.3**
  - Setting `localizedDescription` to nil if not found in strings table
 
