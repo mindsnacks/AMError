@@ -23,7 +23,9 @@ extern NSString *const AMErrorNameKey;  // NSString
 
 
 /**
- `AMError`
+ `AMError` is an `NSError` subclass that adds the following features:
+ 
+   - Accessors for all "userInfo" keys defined by `NSError`
 
  */
 @interface AMError : NSError <NSMutableCopying>
