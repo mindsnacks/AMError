@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AMError"
-  s.version      = "0.2.3"
+  s.version      = "0.2.4"
   s.summary      = "An enhanced NSError subclass."
   s.description  = <<-DESC
                    * Accessors for all common 'UserInfo' keys
