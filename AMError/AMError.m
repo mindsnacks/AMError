@@ -53,6 +53,29 @@ __strong static NSMutableDictionary *stringsTableMap = nil;
     return self[NSFilePathErrorKey];
 }
 
+- (NSString *)localizedDescription
+{
+    if (self[NSLocalizedDescriptionKey] != nil) {
+        return self[NSLocalizedDescriptionKey];
+
+    } else {
+        NSString *const domain = [self domain];
+        NSString *const errorName = [self name];
+        NSString *const stringsTableName = [AMError stringsTableNameForDomain:domain];
+        NSString *localizedDescription = [[AMError bundleForDomain:domain] localizedStringForKey:errorName
+                                                                                           value:nil
+                                                                                           table:stringsTableName];
+        if (![localizedDescription isEqualToString:errorName]) {
+            // localizedStringForKey will return the original string if no localized
+            // string is found, which will just be the error name. In this case just
+            // set the description to nil, which will cause it to fall back on the
+            // superclasses localizedDescription implementation
+            return localizedDescription;
+        }
+    }
+    return [super localizedDescription];
+}
+
 - (id)objectForKeyedSubscript:(id <NSCopying>)key
 {
     return [self userInfo][key];
@@ -233,24 +256,11 @@ static NSString *originString(char const *fileName, int lineNumber)
 AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSString *domain, char const *fileName, int lineNumber, NSDictionary *userInfo)
 {
 	NSString *errorNameString = [NSString stringWithCString:errorName encoding:NSUTF8StringEncoding];
-
 	NSString *errorOrigin = originString(fileName, lineNumber);
-
-	NSString *localizedDescription = [[AMError bundleForDomain:domain] localizedStringForKey:errorNameString
-                                                                                       value:nil
-                                                                                       table:[AMError stringsTableNameForDomain:domain]];
-    if ([localizedDescription isEqualToString:errorNameString]) {
-        // localizedStringForKey will return the original string if no localized
-        // string is found, which will just be the error name. In this case just
-        // set the description to nil, which will cause it to fall back on the
-        // superclasses localizedDescription implementation
-        localizedDescription = nil;
-    }
 
     AMMutableError *error = [AMMutableError errorWithDomain:domain code:errorCode userInfo:userInfo];
     error.name = errorNameString;
     error.origin = errorOrigin;
-    error.localizedDescription = localizedDescription;
     return error;
 }
 
