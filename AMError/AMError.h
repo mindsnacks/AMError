@@ -18,8 +18,8 @@
 /// @name Additional UserInfo Keys
 //--------------------------------
 
-extern NSString *const AMErrorOriginKey;  // NSString
-extern NSString *const AMErrorNameKey;  // NSString
+extern  NSString * _Nonnull const AMErrorOriginKey;  // NSString
+extern NSString * _Nonnull const AMErrorNameKey;  // NSString
 
 
 /**
@@ -33,52 +33,54 @@ extern NSString *const AMErrorNameKey;  // NSString
 /**
  Corresponds to `AMErrorNameKey`.
  */
-- (NSString *)name;
+- (nonnull NSString *)name;
 
 /**
  Corresponds to `AMErrorOriginKey`.
  */
-- (NSString *)origin;
+- (nonnull NSString *)origin;
 
 /**
  Corresponds to `NSUnderlyingErrorKey`.
  */
-- (NSError *)underlyingError;
+- (nullable NSError *)underlyingError;
 
 /**
  Corresponds to `NSStringEncodingErrorKey`.
  */
-- (NSNumber *)stringEncoding;
+- (nullable NSNumber *)stringEncoding;
 
 /**
  Corresponds to `NSURLErrorKey`.
  */
-- (NSURL *)URL;
+- (nullable NSURL *)URL;
 
 /**
  Corresponds to `NSFilePathErrorKey`.
  */
-- (NSString *)filePath;
+- (nullable NSString *)filePath;
+
+
 
 /**
  Dictionary-like access to `userInfo`.
  */
-- (id)objectForKeyedSubscript:(id <NSCopying>)key;
+- (nullable id)objectForKeyedSubscript:(nonnull id <NSCopying>)key;
 
 #pragma mark -
 #pragma mark Bundle Management for Strings files
 
-+ (void)setDefaultBundle:(NSBundle *)bundle;
++ (void)setDefaultBundle:(NSBundle * _Nullable)bundle;
 
-+ (void)setBundle:(NSBundle *)bundle forDomain:(NSString *)domain;
++ (void)setBundle:(NSBundle * _Nullable)bundle forDomain:(NSString * _Nonnull)domain;
 
-+ (NSString *)stringsTableNameForDomain:(NSString *)domain;
++ (NSString * _Nullable)stringsTableNameForDomain:(NSString * _Nonnull)domain;
 
 /**
  By default, AMError will look for <domain>.strings. If you wish to use a
  different strings file you can specify it here
  */
-+ (void)setStringsTableName:(NSString *)tableName forDomain:(NSString *)domain;
++ (void)setStringsTableName:(NSString * _Nullable)tableName forDomain:(NSString * _Nonnull)domain;
 
 @end
 
@@ -93,12 +95,12 @@ extern NSString *const AMErrorNameKey;  // NSString
 /**
  Corresponds to `AMErrorNameKey`.
  */
-@property (nonatomic, strong) NSString *name;
+@property (nonnull, atomic, strong) NSString  *name;
 
 /**
  Corresponds to `AMErrorOriginKey`.
  */
-@property (nonatomic, strong) NSString *origin;
+@property (nonnull, atomic, strong) NSString *origin;
 
 /**
  Corresponds to `NSLocalizedDescriptionKey`.
@@ -107,57 +109,57 @@ extern NSString *const AMErrorNameKey;  // NSString
  this subclass does NOT override. If this property is set to nil, it will
  fall back to the superclasses implementation, and NOT return nil.
  */
-@property (nonatomic, strong) NSString *localizedDescription;
+@property (nullable, atomic, copy) NSString *localizedDescription;
 
 /**
  Corresponds to `NSLocalizedFailureReasonErrorKey`.
  */
-@property (nonatomic, strong) NSString *localizedFailureReason;
+@property (nullable, atomic, copy) NSString *localizedFailureReason;
 
 /**
  Corresponds to `NSLocalizedRecoverySuggestionErrorKey`.
  */
-@property (nonatomic, strong) NSString *localizedRecoverySuggestion;
+@property (nullable, atomic, copy) NSString *localizedRecoverySuggestion;
 
 /**
  Corresponds to `NSLocalizedRecoveryOptionsErrorKey`
  */
-@property (nonatomic, strong) NSArray *localizedRecoveryOptions;
+@property (nullable, atomic, copy) NSArray *localizedRecoveryOptions;
 
 /**
  Corresponds to `NSRecoveryAttempterErrorKey`
  */
-@property (nonatomic, strong) id recoveryAttempter;
+@property (nullable, strong) id recoveryAttempter;
 
 /**
  Corresponds to `NSHelpAnchorErrorKey`
  */
-@property (nonatomic, strong) NSString *helpAnchor;
+@property (nullable, copy) NSString *helpAnchor;
 
 /**
  Corresponds to `NSUnderlyingErrorKey`.
  */
-@property (nonatomic, strong) NSError *underlyingError;
+@property (nullable, copy) NSError *underlyingError;
 
 /**
  Corresponds to `NSStringEncodingErrorKey`.
 */
-@property (nonatomic, strong) NSNumber *stringEncoding;
+@property (nullable, copy) NSNumber *stringEncoding;
 
 /**
  Corresponds to `NSURLErrorKey`.
 */
-@property (nonatomic, strong) NSURL *URL;
+@property (nullable, copy) NSURL *URL;
 
 /**
  Corresponds to `NSFilePathErrorKey`.
  */
-@property (nonatomic, strong) NSString *filePath;
+@property (nullable, copy) NSString *filePath;
 
 /**
  Dictionary-like access to `userInfo`.
  */
-- (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key;
+- (void)setObject:(nullable id)obj forKeyedSubscript:(nonnull id <NSCopying>)key;
 
 @end
 
@@ -169,11 +171,11 @@ extern NSString *const AMErrorNameKey;  // NSString
 extern "C" {
 #endif
 
-    extern AMMutableError *_AMErrorMake(NSInteger errorCode, char const *errorName, NSString *domain, char const *fileName, int lineNumber, NSDictionary *userInfo);
+    extern AMMutableError * _Null_unspecified _AMErrorMake(NSInteger errorCode, char const * _Null_unspecified errorName, NSString * _Null_unspecified domain, char const * _Null_unspecified fileName, int lineNumber, NSDictionary * _Null_unspecified userInfo);
 
-    extern AMMutableError* _AMErrorWrap(NSError *origError, char const *fileName, int lineNumber);
+    extern AMMutableError  * _Null_unspecified  _AMErrorWrap(NSError * _Null_unspecified origError, char const * _Null_unspecified fileName, int lineNumber);
 
-    static inline void _AMOutputErrorAssign(NSError **outError, NSError *error)
+    static inline void _AMOutputErrorAssign(NSError * _Null_unspecified * _Null_unspecified outError, NSError *_Null_unspecified error)
     {
         if (outError != nil) *outError = error;
     }

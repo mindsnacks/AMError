@@ -60,8 +60,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests.release.xcconfig"; sourceTree = "<group>"; };
 		1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D6AC7E998104863BDAD94C1 /* Pods-AMError-MacTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.xcconfig"; path = "Pods/Pods-AMError-MacTests.xcconfig"; sourceTree = "<group>"; };
+		1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A376383D8F084F44A2893F86 /* libPods-AMError-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B328D16D17E23AA800D0DBCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B328D17617E23BC700D0DBCB /* AMError-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMError-iOS-Prefix.pch"; sourceTree = "<group>"; };
@@ -81,8 +83,8 @@
 		B36389FF17E2376800F2BBE4 /* AMError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMError.m; sourceTree = "<group>"; };
 		B3928B7717E2BE1B00BF13A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = net.mrox.amerror.strings; sourceTree = "<group>"; };
-		B3CE51B2BE314E62BB54F4D9 /* Pods-AMError-iOSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.xcconfig"; path = "Pods/Pods-AMError-iOSTests.xcconfig"; sourceTree = "<group>"; };
 		B3EAE3C317FB9C280052DF1E /* Errors.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Errors.strings; sourceTree = "<group>"; };
+		F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AB804CF58471AEA92E4B967 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */,
+				088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */,
+				F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */,
+				0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B328D16917E23AA800D0DBCB /* AMErrorTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,8 +170,7 @@
 				B328D16917E23AA800D0DBCB /* AMErrorTests */,
 				B36389A217E2373A00F2BBE4 /* Frameworks */,
 				B36389A117E2373A00F2BBE4 /* Products */,
-				B3CE51B2BE314E62BB54F4D9 /* Pods-AMError-iOSTests.xcconfig */,
-				6D6AC7E998104863BDAD94C1 /* Pods-AMError-MacTests.xcconfig */,
+				9AB804CF58471AEA92E4B967 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,7 +282,7 @@
 			name = "AMError-MacTests";
 			productName = "AMError-MacTests";
 			productReference = B36389B417E2373A00F2BBE4 /* AMError-MacTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		B36389CD17E2375400F2BBE4 /* AMError-iOS */ = {
 			isa = PBXNativeTarget;
@@ -308,7 +320,7 @@
 			name = "AMError-iOSTests";
 			productName = "AMError-iOSTests";
 			productReference = B36389DD17E2375500F2BBE4 /* AMError-iOSTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -316,6 +328,7 @@
 		B363899617E2371B00F2BBE4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0720;
 				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = B363899917E2371B00F2BBE4 /* Build configuration list for PBXProject "AMError" */;
@@ -387,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-AMError-MacTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		759F2DF65F7A416187FBE9F6 /* Check Pods Manifest.lock */ = {
@@ -417,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-AMError-iOSTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B36389B217E2373A00F2BBE4 /* ShellScript */ = {
@@ -511,6 +524,8 @@
 		B363899A17E2371B00F2BBE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -518,6 +533,8 @@
 		B363899B17E2371B00F2BBE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -588,7 +605,7 @@
 		};
 		B36389C817E2373A00F2BBE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D6AC7E998104863BDAD94C1 /* Pods-AMError-MacTests.xcconfig */;
+			baseConfigurationReference = 1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -627,7 +644,7 @@
 		};
 		B36389C917E2373A00F2BBE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D6AC7E998104863BDAD94C1 /* Pods-AMError-MacTests.xcconfig */;
+			baseConfigurationReference = 088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -724,7 +741,7 @@
 		};
 		B36389F217E2375500F2BBE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3CE51B2BE314E62BB54F4D9 /* Pods-AMError-iOSTests.xcconfig */;
+			baseConfigurationReference = F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -761,7 +778,7 @@
 		};
 		B36389F317E2375500F2BBE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3CE51B2BE314E62BB54F4D9 /* Pods-AMError-iOSTests.xcconfig */;
+			baseConfigurationReference = 0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
