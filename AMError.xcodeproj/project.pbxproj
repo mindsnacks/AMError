@@ -7,35 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92211D35B08141A0A2EC53D6 /* libPods-AMError-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A376383D8F084F44A2893F86 /* libPods-AMError-MacTests.a */; };
+		261F3AE05DDA692972E30B30 /* libPods-AMError-iOSTests2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D713020C03343C939E04890 /* libPods-AMError-iOSTests2.a */; };
+		27ECEAA8FE9BFF6C2C6CC50A /* libPods-AMError-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFAE33F8F4A5CB916B20B63 /* libPods-AMError-MacTests.a */; };
+		382A1A123C0CF6A178ABC757 /* libPods-AMError-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E90DAB55E5820744F4B1469C /* libPods-AMError-iOSTests.a */; };
+		B31017501C973E9D007E00DC /* libAMError-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389A017E2373A00F2BBE4 /* libAMError-Mac.a */; };
+		B31017561C973EBF007E00DC /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
+		B31017571C973EC6007E00DC /* AMErrorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */; };
+		B31017581C973ECA007E00DC /* co.amrox.amerror.strings in Resources */ = {isa = PBXBuildFile; fileRef = B327D7211C9738AD0015619A /* co.amrox.amerror.strings */; };
+		B327D72B1C973B750015619A /* libAMError-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389CE17E2375400F2BBE4 /* libAMError-iOS.a */; };
+		B327D7311C973BA60015619A /* AMErrorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */; };
+		B327D7341C973BB50015619A /* co.amrox.amerror.strings in Resources */ = {isa = PBXBuildFile; fileRef = B327D7211C9738AD0015619A /* co.amrox.amerror.strings */; };
+		B327D7351C973BB70015619A /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
 		B328D17A17E23C7E00D0DBCB /* AMError.m in Sources */ = {isa = PBXBuildFile; fileRef = B36389FF17E2376800F2BBE4 /* AMError.m */; };
 		B328D17B17E23C7F00D0DBCB /* AMError.m in Sources */ = {isa = PBXBuildFile; fileRef = B36389FF17E2376800F2BBE4 /* AMError.m */; };
-		B328D17F17E23EE200D0DBCB /* AMErrorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */; };
-		B328D18017E23EE200D0DBCB /* AMErrorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */; };
 		B33575E117EC3F62006C8DA7 /* AMError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B36389FD17E2376800F2BBE4 /* AMError.h */; };
 		B33575E317EC3F88006C8DA7 /* AMError.h in Headers */ = {isa = PBXBuildFile; fileRef = B36389FD17E2376800F2BBE4 /* AMError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B36389B617E2373A00F2BBE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389B517E2373A00F2BBE4 /* SenTestingKit.framework */; };
-		B36389BA17E2373A00F2BBE4 /* libAMError-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389A017E2373A00F2BBE4 /* libAMError-Mac.a */; };
 		B36389D017E2375400F2BBE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389CF17E2375400F2BBE4 /* Foundation.framework */; };
-		B36389DE17E2375500F2BBE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389B517E2373A00F2BBE4 /* SenTestingKit.framework */; };
-		B36389E117E2375500F2BBE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389CF17E2375400F2BBE4 /* Foundation.framework */; };
-		B36389E417E2375500F2BBE4 /* libAMError-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389CE17E2375400F2BBE4 /* libAMError-iOS.a */; };
 		B3928B7817E2BE1B00BF13A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3928B7717E2BE1B00BF13A1 /* Foundation.framework */; };
-		B3928B7917E2BE2000BF13A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3928B7717E2BE1B00BF13A1 /* Foundation.framework */; };
-		B3EAE3C417FB9C280052DF1E /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
-		B3EAE3C517FB9C280052DF1E /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
-		DD5CD1177F694573B85B6E34 /* libPods-AMError-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B36389B817E2373A00F2BBE4 /* PBXContainerItemProxy */ = {
+		B31017511C973E9D007E00DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B363899617E2371B00F2BBE4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B363899F17E2373A00F2BBE4;
 			remoteInfo = "AMError-Mac";
 		};
-		B36389E217E2375500F2BBE4 /* PBXContainerItemProxy */ = {
+		B327D72C1C973B750015619A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B363899617E2371B00F2BBE4 /* Project object */;
 			proxyType = 1;
@@ -60,10 +59,16 @@
 /* Begin PBXFileReference section */
 		0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		11EF3626047645F3E66C62F3 /* Pods-AMError-iOSTests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests2/Pods-AMError-iOSTests2.debug.xcconfig"; sourceTree = "<group>"; };
 		1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EFAE33F8F4A5CB916B20B63 /* libPods-AMError-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D35DFB4B647121B185DF437 /* Pods-AMError-iOSTests2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests2.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests2/Pods-AMError-iOSTests2.release.xcconfig"; sourceTree = "<group>"; };
+		6D713020C03343C939E04890 /* libPods-AMError-iOSTests2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-iOSTests2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A376383D8F084F44A2893F86 /* libPods-AMError-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B310174B1C973E9D007E00DC /* AMError-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMError-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B327D7211C9738AD0015619A /* co.amrox.amerror.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = co.amrox.amerror.strings; sourceTree = "<group>"; };
+		B327D7261C973B750015619A /* AMError-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMError-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B328D16D17E23AA800D0DBCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B328D17617E23BC700D0DBCB /* AMError-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMError-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		B328D17717E23BC700D0DBCB /* AMError-Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMError-Mac-Prefix.pch"; sourceTree = "<group>"; };
@@ -71,21 +76,39 @@
 		B328D17D17E23E6000D0DBCB /* AMErrorTests-Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMErrorTests-Mac-Prefix.pch"; sourceTree = "<group>"; };
 		B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMErrorSpec.m; sourceTree = "<group>"; };
 		B36389A017E2373A00F2BBE4 /* libAMError-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAMError-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36389B417E2373A00F2BBE4 /* AMError-MacTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMError-MacTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36389B517E2373A00F2BBE4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B36389BD17E2373A00F2BBE4 /* AMError-MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMError-MacTests-Info.plist"; sourceTree = "<group>"; };
 		B36389CE17E2375400F2BBE4 /* libAMError-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAMError-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36389CF17E2375400F2BBE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B36389DD17E2375500F2BBE4 /* AMError-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMError-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36389E717E2375500F2BBE4 /* AMError-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMError-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		B36389FD17E2376800F2BBE4 /* AMError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMError.h; sourceTree = "<group>"; };
 		B36389FF17E2376800F2BBE4 /* AMError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMError.m; sourceTree = "<group>"; };
 		B3928B7717E2BE1B00BF13A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B3EAE3C317FB9C280052DF1E /* Errors.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Errors.strings; sourceTree = "<group>"; };
+		E90DAB55E5820744F4B1469C /* libPods-AMError-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B31017481C973E9D007E00DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31017501C973E9D007E00DC /* libAMError-Mac.a in Frameworks */,
+				27ECEAA8FE9BFF6C2C6CC50A /* libPods-AMError-MacTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B327D7231C973B750015619A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B327D72B1C973B750015619A /* libAMError-iOS.a in Frameworks */,
+				261F3AE05DDA692972E30B30 /* libPods-AMError-iOSTests2.a in Frameworks */,
+				382A1A123C0CF6A178ABC757 /* libPods-AMError-iOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B363899D17E2373A00F2BBE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,33 +117,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B36389B017E2373A00F2BBE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B36389B617E2373A00F2BBE4 /* SenTestingKit.framework in Frameworks */,
-				B36389BA17E2373A00F2BBE4 /* libAMError-Mac.a in Frameworks */,
-				92211D35B08141A0A2EC53D6 /* libPods-AMError-MacTests.a in Frameworks */,
-				B3928B7917E2BE2000BF13A1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B36389CB17E2375400F2BBE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B36389D017E2375400F2BBE4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36389D917E2375500F2BBE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B36389DE17E2375500F2BBE4 /* SenTestingKit.framework in Frameworks */,
-				B36389E117E2375500F2BBE4 /* Foundation.framework in Frameworks */,
-				B36389E417E2375500F2BBE4 /* libAMError-iOS.a in Frameworks */,
-				DD5CD1177F694573B85B6E34 /* libPods-AMError-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +135,8 @@
 				088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */,
 				F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */,
 				0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */,
+				11EF3626047645F3E66C62F3 /* Pods-AMError-iOSTests2.debug.xcconfig */,
+				4D35DFB4B647121B185DF437 /* Pods-AMError-iOSTests2.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -176,9 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				B36389A017E2373A00F2BBE4 /* libAMError-Mac.a */,
-				B36389B417E2373A00F2BBE4 /* AMError-MacTests.octest */,
 				B36389CE17E2375400F2BBE4 /* libAMError-iOS.a */,
-				B36389DD17E2375500F2BBE4 /* AMError-iOSTests.octest */,
+				B327D7261C973B750015619A /* AMError-iOSTests.xctest */,
+				B310174B1C973E9D007E00DC /* AMError-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +192,9 @@
 				B3928B7617E2BDFD00BF13A1 /* iOS */,
 				B3928B7517E2BDE500BF13A1 /* Mac */,
 				B36389B517E2373A00F2BBE4 /* SenTestingKit.framework */,
+				6D713020C03343C939E04890 /* libPods-AMError-iOSTests2.a */,
+				E90DAB55E5820744F4B1469C /* libPods-AMError-iOSTests.a */,
+				3EFAE33F8F4A5CB916B20B63 /* libPods-AMError-MacTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,6 +250,48 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B310174A1C973E9D007E00DC /* AMError-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31017531C973E9D007E00DC /* Build configuration list for PBXNativeTarget "AMError-MacTests" */;
+			buildPhases = (
+				4921F8FCF634B2D92C74B22B /* Check Pods Manifest.lock */,
+				B31017471C973E9D007E00DC /* Sources */,
+				B31017481C973E9D007E00DC /* Frameworks */,
+				B31017491C973E9D007E00DC /* Resources */,
+				0F392C35E8F0B9BAF98BFA4E /* Embed Pods Frameworks */,
+				0E8859E6E0513BB07B552255 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B31017521C973E9D007E00DC /* PBXTargetDependency */,
+			);
+			name = "AMError-MacTests";
+			productName = "AMError-MacTests";
+			productReference = B310174B1C973E9D007E00DC /* AMError-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B327D7251C973B750015619A /* AMError-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B327D7301C973B750015619A /* Build configuration list for PBXNativeTarget "AMError-iOSTests" */;
+			buildPhases = (
+				903EC3ED7A7B6D3DCC2CB2B7 /* Check Pods Manifest.lock */,
+				B327D7221C973B750015619A /* Sources */,
+				B327D7231C973B750015619A /* Frameworks */,
+				B327D7241C973B750015619A /* Resources */,
+				99D03338C763B8B2CB7F3EF7 /* Embed Pods Frameworks */,
+				AAF2D3B6FB1E703732B64133 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B327D72D1C973B750015619A /* PBXTargetDependency */,
+			);
+			name = "AMError-iOSTests";
+			productName = "AMError-iOSTests2";
+			productReference = B327D7261C973B750015619A /* AMError-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B363899F17E2373A00F2BBE4 /* AMError-Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B36389C417E2373A00F2BBE4 /* Build configuration list for PBXNativeTarget "AMError-Mac" */;
@@ -260,27 +308,6 @@
 			productName = "AMError-Mac";
 			productReference = B36389A017E2373A00F2BBE4 /* libAMError-Mac.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		B36389B317E2373A00F2BBE4 /* AMError-MacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B36389C717E2373A00F2BBE4 /* Build configuration list for PBXNativeTarget "AMError-MacTests" */;
-			buildPhases = (
-				759F2DF65F7A416187FBE9F6 /* Check Pods Manifest.lock */,
-				B36389AF17E2373A00F2BBE4 /* Sources */,
-				B36389B017E2373A00F2BBE4 /* Frameworks */,
-				B36389B117E2373A00F2BBE4 /* Resources */,
-				B36389B217E2373A00F2BBE4 /* ShellScript */,
-				495B5C40F8D24F29A25AF3E6 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B36389B917E2373A00F2BBE4 /* PBXTargetDependency */,
-			);
-			name = "AMError-MacTests";
-			productName = "AMError-MacTests";
-			productReference = B36389B417E2373A00F2BBE4 /* AMError-MacTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		B36389CD17E2375400F2BBE4 /* AMError-iOS */ = {
 			isa = PBXNativeTarget;
@@ -299,27 +326,6 @@
 			productReference = B36389CE17E2375400F2BBE4 /* libAMError-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B36389DC17E2375500F2BBE4 /* AMError-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B36389F117E2375500F2BBE4 /* Build configuration list for PBXNativeTarget "AMError-iOSTests" */;
-			buildPhases = (
-				00E970121483415E9CA6EC6C /* Check Pods Manifest.lock */,
-				B36389D817E2375500F2BBE4 /* Sources */,
-				B36389D917E2375500F2BBE4 /* Frameworks */,
-				B36389DA17E2375500F2BBE4 /* Resources */,
-				B36389DB17E2375500F2BBE4 /* ShellScript */,
-				98D1228D1BAA47ABA45A4FCC /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B36389E317E2375500F2BBE4 /* PBXTargetDependency */,
-			);
-			name = "AMError-iOSTests";
-			productName = "AMError-iOSTests";
-			productReference = B36389DD17E2375500F2BBE4 /* AMError-iOSTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -328,6 +334,14 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0720;
 				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					B310174A1C973E9D007E00DC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					B327D7251C973B750015619A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
 			};
 			buildConfigurationList = B363899917E2371B00F2BBE4 /* Build configuration list for PBXProject "AMError" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,49 +356,36 @@
 			projectRoot = "";
 			targets = (
 				B36389CD17E2375400F2BBE4 /* AMError-iOS */,
-				B36389DC17E2375500F2BBE4 /* AMError-iOSTests */,
+				B327D7251C973B750015619A /* AMError-iOSTests */,
 				B363899F17E2373A00F2BBE4 /* AMError-Mac */,
-				B36389B317E2373A00F2BBE4 /* AMError-MacTests */,
+				B310174A1C973E9D007E00DC /* AMError-MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B36389B117E2373A00F2BBE4 /* Resources */ = {
+		B31017491C973E9D007E00DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EAE3C517FB9C280052DF1E /* Errors.strings in Resources */,
+				B31017561C973EBF007E00DC /* Errors.strings in Resources */,
+				B31017581C973ECA007E00DC /* co.amrox.amerror.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B36389DA17E2375500F2BBE4 /* Resources */ = {
+		B327D7241C973B750015619A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EAE3C417FB9C280052DF1E /* Errors.strings in Resources */,
+				B327D7341C973BB50015619A /* co.amrox.amerror.strings in Resources */,
+				B327D7351C973BB70015619A /* Errors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00E970121483415E9CA6EC6C /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		495B5C40F8D24F29A25AF3E6 /* Copy Pods Resources */ = {
+		0E8859E6E0513BB07B552255 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,7 +400,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		759F2DF65F7A416187FBE9F6 /* Check Pods Manifest.lock */ = {
+		0F392C35E8F0B9BAF98BFA4E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4921F8FCF634B2D92C74B22B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,7 +430,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		98D1228D1BAA47ABA45A4FCC /* Copy Pods Resources */ = {
+		903EC3ED7A7B6D3DCC2CB2B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99D03338C763B8B2CB7F3EF7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF2D3B6FB1E703732B64133 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,48 +475,30 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B36389B217E2373A00F2BBE4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		B36389DB17E2375500F2BBE4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B31017471C973E9D007E00DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31017571C973EC6007E00DC /* AMErrorSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B327D7221C973B750015619A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B327D7311C973BA60015619A /* AMErrorSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B363899C17E2373A00F2BBE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B328D17A17E23C7E00D0DBCB /* AMError.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36389AF17E2373A00F2BBE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B328D18017E23EE200D0DBCB /* AMErrorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,26 +510,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B36389D817E2375500F2BBE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B328D17F17E23EE200D0DBCB /* AMErrorSpec.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B36389B917E2373A00F2BBE4 /* PBXTargetDependency */ = {
+		B31017521C973E9D007E00DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B363899F17E2373A00F2BBE4 /* AMError-Mac */;
-			targetProxy = B36389B817E2373A00F2BBE4 /* PBXContainerItemProxy */;
+			targetProxy = B31017511C973E9D007E00DC /* PBXContainerItemProxy */;
 		};
-		B36389E317E2375500F2BBE4 /* PBXTargetDependency */ = {
+		B327D72D1C973B750015619A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B36389CD17E2375400F2BBE4 /* AMError-iOS */;
-			targetProxy = B36389E217E2375500F2BBE4 /* PBXContainerItemProxy */;
+			targetProxy = B327D72C1C973B750015619A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,12 +537,195 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B31017541C973E9D007E00DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-Mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "AMErrorTests/AMError-MacTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.amerror.AMError-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B31017551C973E9D007E00DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "AMErrorTests/AMError-MacTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.amerror.AMError-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B327D72E1C973B750015619A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "AMErrorTests/AMError-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.amerror.AMError-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B327D72F1C973B750015619A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-iOS-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "AMErrorTests/AMError-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.amerror.AMError-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		B363899A17E2371B00F2BBE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -531,7 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 			};
 			name = Release;
 		};
@@ -602,79 +805,6 @@
 			};
 			name = Release;
 		};
-		B36389C817E2373A00F2BBE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-Mac-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "AMErrorTests/AMError-MacTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		B36389C917E2373A00F2BBE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 088C6CC7CE3E2917041A27FC /* Pods-AMError-MacTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-Mac-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "AMErrorTests/AMError-MacTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		B36389EF17E2375500F2BBE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -740,78 +870,27 @@
 			};
 			name = Release;
 		};
-		B36389F217E2375500F2BBE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-iOS-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "AMErrorTests/AMError-iOSTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		B36389F317E2375500F2BBE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0561F378AC5354A264CBAA59 /* Pods-AMError-iOSTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AMErrorTests/AMErrorTests-iOS-Prefix.pch";
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "AMErrorTests/AMError-iOSTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TEST_AFTER_BUILD = YES;
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B31017531C973E9D007E00DC /* Build configuration list for PBXNativeTarget "AMError-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31017541C973E9D007E00DC /* Debug */,
+				B31017551C973E9D007E00DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B327D7301C973B750015619A /* Build configuration list for PBXNativeTarget "AMError-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B327D72E1C973B750015619A /* Debug */,
+				B327D72F1C973B750015619A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B363899917E2371B00F2BBE4 /* Build configuration list for PBXProject "AMError" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -830,29 +909,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B36389C717E2373A00F2BBE4 /* Build configuration list for PBXNativeTarget "AMError-MacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B36389C817E2373A00F2BBE4 /* Debug */,
-				B36389C917E2373A00F2BBE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B36389EE17E2375500F2BBE4 /* Build configuration list for PBXNativeTarget "AMError-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B36389EF17E2375500F2BBE4 /* Debug */,
 				B36389F017E2375500F2BBE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B36389F117E2375500F2BBE4 /* Build configuration list for PBXNativeTarget "AMError-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B36389F217E2375500F2BBE4 /* Debug */,
-				B36389F317E2375500F2BBE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

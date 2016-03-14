@@ -32,13 +32,27 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B36389DC17E2375500F2BBE4"
-               BuildableName = "AMError-iOSTests.octest"
+               BlueprintIdentifier = "B327D7251C973B750015619A"
+               BuildableName = "AMError-iOSTests.xctest"
                BlueprintName = "AMError-iOSTests"
                ReferencedContainer = "container:AMError.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AMError_iOSTests2">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B36389CD17E2375400F2BBE4"
+            BuildableName = "libAMError-iOS.a"
+            BlueprintName = "AMError-iOS"
+            ReferencedContainer = "container:AMError.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -70,6 +84,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B36389CD17E2375400F2BBE4"
+            BuildableName = "libAMError-iOS.a"
+            BlueprintName = "AMError-iOS"
+            ReferencedContainer = "container:AMError.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
