@@ -3,6 +3,12 @@ AMError
 
 ## Changelog
 
+- **0.2.7**
+ - Xcode 7 compatibility and general modernization
+
+- **0.2.6**
+ - Build fixes 
+
 - **0.2.5**
  - `localizedDescription` will now first use any explicitly set value, then
    fall back to strings table, and finally fall back to superclasses'
