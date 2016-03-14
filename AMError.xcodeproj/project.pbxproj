@@ -22,8 +22,6 @@
 		B36389E417E2375500F2BBE4 /* libAMError-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36389CE17E2375400F2BBE4 /* libAMError-iOS.a */; };
 		B3928B7817E2BE1B00BF13A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3928B7717E2BE1B00BF13A1 /* Foundation.framework */; };
 		B3928B7917E2BE2000BF13A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3928B7717E2BE1B00BF13A1 /* Foundation.framework */; };
-		B3928B8517E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */; };
-		B3928B8617E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */; };
 		B3EAE3C417FB9C280052DF1E /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
 		B3EAE3C517FB9C280052DF1E /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3EAE3C317FB9C280052DF1E /* Errors.strings */; };
 		DD5CD1177F694573B85B6E34 /* libPods-AMError-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */; };
@@ -65,6 +63,7 @@
 		1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A376383D8F084F44A2893F86 /* libPods-AMError-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B327D7211C9738AD0015619A /* co.amrox.amerror.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = co.amrox.amerror.strings; sourceTree = "<group>"; };
 		B328D16D17E23AA800D0DBCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B328D17617E23BC700D0DBCB /* AMError-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMError-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		B328D17717E23BC700D0DBCB /* AMError-Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMError-Mac-Prefix.pch"; sourceTree = "<group>"; };
@@ -82,7 +81,6 @@
 		B36389FD17E2376800F2BBE4 /* AMError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMError.h; sourceTree = "<group>"; };
 		B36389FF17E2376800F2BBE4 /* AMError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMError.m; sourceTree = "<group>"; };
 		B3928B7717E2BE1B00BF13A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = net.mrox.amerror.strings; sourceTree = "<group>"; };
 		B3EAE3C317FB9C280052DF1E /* Errors.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Errors.strings; sourceTree = "<group>"; };
 		F05349293D48437B629B3997 /* Pods-AMError-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests/Pods-AMError-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,8 +141,8 @@
 		B328D16917E23AA800D0DBCB /* AMErrorTests */ = {
 			isa = PBXGroup;
 			children = (
+				B327D7211C9738AD0015619A /* co.amrox.amerror.strings */,
 				B328D17E17E23EE200D0DBCB /* AMErrorSpec.m */,
-				B3928B8417E2E55C00BF13A1 /* net.mrox.amerror.strings */,
 				B3EAE3C317FB9C280052DF1E /* Errors.strings */,
 				B328D16A17E23AA800D0DBCB /* Supporting Files */,
 			);
@@ -329,7 +327,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0720;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = B363899917E2371B00F2BBE4 /* Build configuration list for PBXProject "AMError" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,7 +354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3928B8617E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */,
 				B3EAE3C517FB9C280052DF1E /* Errors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +362,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3928B8517E2E55C00BF13A1 /* net.mrox.amerror.strings in Resources */,
 				B3EAE3C417FB9C280052DF1E /* Errors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,7 +520,8 @@
 		B363899A17E2371B00F2BBE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 			};
@@ -533,7 +530,7 @@
 		B363899B17E2371B00F2BBE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
@@ -550,6 +547,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -586,6 +584,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -636,6 +635,7 @@
 				INFOPLIST_FILE = "AMErrorTests/AMError-MacTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -668,6 +668,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "AMErrorTests/AMError-MacTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
@@ -769,6 +770,7 @@
 				INFOPLIST_FILE = "AMErrorTests/AMError-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_AFTER_BUILD = YES;
@@ -798,6 +800,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "AMErrorTests/AMError-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.amrox.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_AFTER_BUILD = YES;

@@ -1,15 +1,8 @@
-//
-//  AMErrorSpec.m
-//  AMError
-//
-//  Created by Andy Mroczkowski on 9/12/13.
-//  Copyright 2013 __MyCompanyName__. All rights reserved.
-//
 
 #import "AMError.h"
 
 
-#define ERROR_DOMAIN @"net.mrox.amerror"
+#define ERROR_DOMAIN @"co.amrox.amerror"
 #define ERROR_CODE_1 1
 #define ERROR_CODE_2 2
 
@@ -56,7 +49,7 @@ context(@"macro creation", ^{
         });
 
         it(@"should have the default localizedDescription", ^{
-            NSString *expectedLocalizedDescription = @"The operation couldn’t be completed. (net.mrox.amerror error 2.)";
+            NSString *expectedLocalizedDescription = @"The operation couldn’t be completed. (co.amrox.amerror error 2.)";
             [[error.localizedDescription should] equal:expectedLocalizedDescription];
         });
 
