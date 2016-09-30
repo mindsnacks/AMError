@@ -1,9 +1,13 @@
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXPORT double AMErrorVersionNumber;
+FOUNDATION_EXPORT const unsigned char AMErrorVersionString[];
+
 ///---------------------
 /// @name Main Functions
 //----------------------
+
 
 #define AMErrorMake(domain, code) _AMErrorMake(code, #code, domain, __FILE__, __LINE__, nil)
 
