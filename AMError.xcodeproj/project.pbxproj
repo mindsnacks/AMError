@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		261F3AE05DDA692972E30B30 /* libPods-AMError-iOSTests2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D713020C03343C939E04890 /* libPods-AMError-iOSTests2.a */; };
 		27ECEAA8FE9BFF6C2C6CC50A /* libPods-AMError-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFAE33F8F4A5CB916B20B63 /* libPods-AMError-MacTests.a */; };
+		35383DF71DAF097800F2A68D /* framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 35383DF61DAF097800F2A68D /* framework.xcconfig */; };
 		3592AD1B1D9F20B20024E326 /* AMError.m in Sources */ = {isa = PBXBuildFile; fileRef = B36389FF17E2376800F2BBE4 /* AMError.m */; };
 		3592AD1C1D9F20BB0024E326 /* AMError.h in Headers */ = {isa = PBXBuildFile; fileRef = B36389FD17E2376800F2BBE4 /* AMError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		382A1A123C0CF6A178ABC757 /* libPods-AMError-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E90DAB55E5820744F4B1469C /* libPods-AMError-iOSTests.a */; };
@@ -64,6 +65,7 @@
 		11EF3626047645F3E66C62F3 /* Pods-AMError-iOSTests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-iOSTests2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-iOSTests2/Pods-AMError-iOSTests2.debug.xcconfig"; sourceTree = "<group>"; };
 		1866D2969F644DAA8187CF9F /* libPods-AMError-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6678CC55595FBDDCE6326D /* Pods-AMError-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMError-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMError-MacTests/Pods-AMError-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35383DF61DAF097800F2A68D /* framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = framework.xcconfig; sourceTree = "<group>"; };
 		3592AD131D9F20A90024E326 /* AMErroriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMErroriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3592AD161D9F20A90024E326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EFAE33F8F4A5CB916B20B63 /* libPods-AMError-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMError-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 		3592AD141D9F20A90024E326 /* AMError Framework */ = {
 			isa = PBXGroup;
 			children = (
+				35383DF61DAF097800F2A68D /* framework.xcconfig */,
 				3592AD161D9F20A90024E326 /* Info.plist */,
 			);
 			name = "AMError Framework";
@@ -421,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35383DF71DAF097800F2A68D /* framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +611,7 @@
 /* Begin XCBuildConfiguration section */
 		3592AD181D9F20A90024E326 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35383DF61DAF097800F2A68D /* framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -626,8 +631,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -667,6 +670,7 @@
 		};
 		3592AD191D9F20A90024E326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35383DF61DAF097800F2A68D /* framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -686,8 +690,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
